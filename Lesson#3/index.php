@@ -16,9 +16,16 @@ require __DIR__ . '/'.$name.'.php';
     <title>Фотографии</title>
 </head>
 <body>
+<?php if (!empty($_GET['img'])){
+echo Controllers\MainController::viewBigPhoto($_GET['img']);
 
+}
 
-<?php echo Controllers\MainController::viewMain(); ?>
+else{
+
+echo Controllers\MainController::viewMain();
+}
+ ?>
     
 </body>
 </html>
