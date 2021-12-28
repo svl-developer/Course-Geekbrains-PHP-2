@@ -1,0 +1,9 @@
+
+    <h1 style=" text-align: center">Добро пожаловать на мою галерею фотографий сделанную с помощью twig</h1>
+{%for img in images %}
+
+    <a href="?img={{img.id}}"><img src="img/smal/{{img.img}}" width="300px"></img></a>
+
+{%endfor%}
+    
+
